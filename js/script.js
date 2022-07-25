@@ -83,7 +83,7 @@ while(producto != NaN){
 function procesoDeCompra(){
     encontrado = stock.find((elemento) => elemento.id == producto);
 
-    let cantidad = parseInt(prompt('El precio de ' + encontrado.nombre + ' en color ' + encontrado.color + ' es de ' + encontrado.precio + '. ¿Cuántas unidades querés?'));
+    let cantidad = parseInt(prompt('El precio de ' + encontrado.nombre + ' en color ' + encontrado.color + ' es de $ ' + encontrado.precio + '. ¿Cuántas unidades querés?'));
 
     if(cantidad <= encontrado.cantidadDisp){
         total = encontrado.precio * cantidad;
